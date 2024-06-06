@@ -50,7 +50,7 @@ const ServiceList = () => {
     queryKey: ["service-list"],
     queryFn: async () => {
       const res = await fetch(
-        "https://suchy-portfolio-server.onrender.com/service/all"
+        "https://sayed-portfolio-server.onrender.com/service/all"
       );
       const data = await res.json();
       return data.service;
@@ -96,7 +96,7 @@ const ServiceList = () => {
 
   const handleDelete = (product) => {
     fetch(
-      `https://suchy-portfolio-server.onrender.com/service/delete/${product}`,
+      `https://sayed-portfolio-server.onrender.com/service/delete/${product}`,
       {
         method: "DELETE",
       }

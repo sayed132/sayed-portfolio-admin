@@ -10,7 +10,7 @@ const Profile = () => {
     queryKey: ["profile"],
     queryFn: async () => {
       const res = await fetch(
-        "https://suchy-portfolio-server.onrender.com/profile"
+        "https://sayed-portfolio-server.onrender.com/profile"
       );
       const data = await res.json();
       return data.user[0];
@@ -90,7 +90,7 @@ const Profile = () => {
     }
   
     // Create the URL using the user's _id
-    const url = `https://suchy-portfolio-server.onrender.com/profile/${profile._id}`;
+    const url = `https://sayed-portfolio-server.onrender.com/profile/${profile._id}`;
   
     try {
       const response = await fetch(url, {

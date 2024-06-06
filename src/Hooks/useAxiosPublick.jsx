@@ -2,7 +2,7 @@
 import axios from "axios";
 
 const axiosPublic = axios.create({
-    baseURL: 'https://suchy-portfolio-server.onrender.com'
+    baseURL: 'https://sayed-portfolio-server.onrender.com'
 })
 
 const useAxiosPublic = () => {

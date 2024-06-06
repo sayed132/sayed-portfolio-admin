@@ -55,7 +55,7 @@ const PortfolioList = () => {
     queryKey: ["portfolio-list"],
     queryFn: async () => {
       const res = await fetch(
-        "https://suchy-portfolio-server.onrender.com/portfolio/all"
+        "https://sayed-portfolio-server.onrender.com/portfolio/all"
       );
       const data = await res.json();
       return data.portfolio;
@@ -112,7 +112,7 @@ const PortfolioList = () => {
   
   const handleDelete = (product) => {
     fetch(
-      `https://suchy-portfolio-server.onrender.com/portfolio/delete/${product}`,
+      `https://sayed-portfolio-server.onrender.com/portfolio/delete/${product}`,
       {
         method: "DELETE",
       }

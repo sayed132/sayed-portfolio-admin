@@ -53,7 +53,7 @@ const Education = () => {
     queryKey: ["education-list"],
     queryFn: async () => {
       const res = await fetch(
-        "https://suchy-portfolio-server.onrender.com/edu/all"
+        "https://sayed-portfolio-server.onrender.com/edu/all"
       );
       const data = await res.json();
       return data.education;
@@ -101,7 +101,7 @@ const Education = () => {
 
   const handleDelete = (product) => {
     fetch(
-      `https://suchy-portfolio-server.onrender.com/edu/delete/${product}`,
+      `https://sayed-portfolio-server.onrender.com/edu/delete/${product}`,
       {
         method: "DELETE",
         // headers: {

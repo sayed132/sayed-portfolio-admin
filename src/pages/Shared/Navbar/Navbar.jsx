@@ -31,7 +31,7 @@ export const Navbar = () => {
   return (
     <nav className="flex items-center justify-between bg-base-100 shadow  px-4 py-2  ">
       <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold  transition-all duration-200 hover:scale-110">
-        <h2>Sanjida Suchy</h2>
+        <h2>Abu Sayed</h2>
       </div>
       <ul className="hidden items-center justify-between gap-10 md:flex">
         
